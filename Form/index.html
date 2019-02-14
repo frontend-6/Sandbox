@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+    <!-- самый простой способ отправки сообщения на почту -->
+    <form action="mailto:alexhateful@gmail.com" method="get">
+        <input type="text" name="subject">
+        <input type="text" name="body">
+        <input type="submit" value="send">
+    </form>
+
+    <form action="#">
+        <input type="checkbox" name="check" id="flag">
+        <label for="flag">установить флажок</label>
+    </form>
+    <style>
+        [type="checkbox"] {
+            /* стили для чекбокса */
+        }
+        label {
+            /* стили для label */
+        }
+        [type="checkbox"]:checked + label {
+            /* стили для label когда checkbox отмечен */
+            text-decoration: line-through;
+            
+        }
+    </style>
+</body>
+</html>
