@@ -1,0 +1,55 @@
+/* styles goes here */
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #464f54;
+    color: black;
+    font-size: 27px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+.panel {
+    background-color: white;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.22);
+    padding-left: 67px;
+}
+
+.panel-wrap {
+    border-left: 1px solid #e8eced;
+    padding: 55px;
+}
+
+.autor {
+    font-family: 'Proxima Nova', sans-serif;
+    color: #b4b4b4;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.21em;
+}
+
+h1 {
+    color: #2a2a2a;
+    font-family: 'Futura PT', monospace;
+    font-size: 78px;
+    font-weight: 800;
+    line-height: 74px;
+    text-transform: uppercase;
+    letter-spacing: 0.052em;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+blockquote {
+    color: #8f8f8f;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 62px;
+    margin: 0;
+    margin-top: -6px;
+    margin-bottom: 33px;
+}
+p {
+    margin: 22px 0;
+}
