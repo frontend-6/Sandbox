@@ -1,0 +1,21 @@
+/* styles goes here */
+input {
+    display: none;
+}
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.star {
+    width: 42px;
+    height: 42px;
+    margin: 0 10px;
+    display: block;
+    background-color: red;
+}
+.star:hover, .star:hover ~ .star {
+    background-color: green !important;
+}
+input:checked ~ .star {
+    background-color: blue;
+}
