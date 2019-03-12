@@ -1,5 +1,6 @@
 .instagram {
-    background: url(../img/bg--left.png) left no-repeat, url(../img/bg--right.png) no-repeat right;
+    background: url(../img/bg--left.png) left no-repeat,
+                url(../img/bg--right.png) no-repeat right;
     padding: 50px 0;
 }
 h2 {
@@ -50,7 +51,8 @@ i {
     z-index: 2;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) scale(0);
+    transform: translate(-50%,-50%)
+                scale(0);
     font-size: 12em;
     transition: .2s;
 }
