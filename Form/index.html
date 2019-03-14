@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Form</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- самый простой способ отправки сообщения на почту -->
     <form action="mailto:alexhateful@gmail.com" method="get">
         <input type="text" name="subject">
         <input type="text" name="body">
-        <input type="submit" value="send">
+        <input type="submit" value="send" class="btn">
     </form>
 
     <form action="#">
@@ -29,6 +34,14 @@
             /* стили для label когда checkbox отмечен */
             text-decoration: line-through;
             
+        }
+        .btn {
+            background: none;
+            color: blue;
+            border: 2px solid currentColor;
+        }
+        .btn:hover {
+            color: red;
         }
     </style>
 </body>
