@@ -108,13 +108,14 @@ body {
     padding-top: 54px;
 }
 
-.tabs__content {
+/* .tabs__content:target {
+    display: block;
+} */
+
+.tabs__content:not(:target) {
     display: none;
 }
 
-.tabs__content:target {
-    display: block;
-}
 
 /* .form {
 
