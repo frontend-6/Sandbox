@@ -1,0 +1,8 @@
+/* styles goes here */
+body {
+    font-size: 5em;
+}
+.panel {
+    background-color: grey;
+    height: 150px;
+}

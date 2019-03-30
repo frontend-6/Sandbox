@@ -3,15 +3,16 @@ let counter = 1;
 
 table += `<table>`;
 
-for (let i = 0; i < 2; i++) {
+for (let i = 1; i <= 9; i++) {
     
     table += `<tr>`;
 
-    for (let j = 0; j < 3; j++) {
+    for (let j = 1; j <= 9; j++) {
         
         table += `<td>`;
 
-        table += counter++;
+        table += `<pre>${j} * ${i} = ${i*j} &nbsp;&nbsp;&nbsp;</pre>`;
+        table += "<pre>" + j + " * " + i + " = " + i*j + " &nbsp;&nbsp;&nbsp;";
 
         table += `</td>`;
         
