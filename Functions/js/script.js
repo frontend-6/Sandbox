@@ -17,6 +17,12 @@ function square( a, b ) {
 function askNumber( string ) {
     let chislo;
     
+    // do {
+        
+    //     chislo = prompt( string );
+        
+    // } while ( parseInt(chislo) !== NaN );
+    
     return parseInt( chislo );
 }
 
