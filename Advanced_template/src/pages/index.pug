@@ -1,0 +1,25 @@
+extends ../layout.pug
+
+block title
+    title= data.pageTitle
+
+block content
+    .container
+        .text-center
+            h1!= data.title
+            p= data.subtitle
+        form(action="#", method="get")
+            .row
+                .col-4.d-flex
+                    .row.flex-grow-1
+                        each val in data.social
+                            .col-6.d-flex.mb-4
+                                +btn(val, val)
+                .col-8
+                    .row
+                        each val in data.placeholder
+                            .col-6.d-flex.mb-4
+                                +input(val)
+                        .col-12.d-flex.mb-4
+                            +input(data.placeholderTextarea, true)
+                            +btn(data.iconSend, data.iconSend, true)

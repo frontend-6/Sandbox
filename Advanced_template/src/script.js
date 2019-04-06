@@ -1,0 +1,1 @@
+//@prepros-append assets/js/init.js

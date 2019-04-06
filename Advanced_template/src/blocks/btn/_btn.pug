@@ -1,0 +1,7 @@
+mixin btn(val, mod, button= false)
+    if !button
+        a(href=NULL, class="btn " + (mod ? `btn--${mod}` : ``))
+            i(class="fab fa-" +val)
+    else
+        button(type="submit", class="btn " + (mod ? `btn--${mod}` : ``))
+            i(class="fab fa-" +val)

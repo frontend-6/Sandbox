@@ -1,0 +1,24 @@
+.input {
+    width: 100%;
+    border: 1px solid #bababa;
+    border-radius: 5px;
+    color: #666;
+    padding: 18px 19px;
+
+    &:focus {
+        outline: none;
+        border-color: #2ec06c;
+    }
+
+    @include placeholder {
+        font-style: italic;
+    }
+
+    &--textarea {
+        min-height: 191px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: none;
+        resize: none;
+    }
+}

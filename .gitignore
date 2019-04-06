@@ -1,2 +1,5 @@
 ProductMan/
 .vscode
+dist/
+prepros-6.config
+psd/

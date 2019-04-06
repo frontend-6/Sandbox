@@ -1,0 +1,5 @@
+mixin input(placeholder, textarea= false)
+    if !textarea
+        input(placeholder= placeholder, name).input
+    else
+        textarea(name, placeholder= placeholder).input.input--textarea
