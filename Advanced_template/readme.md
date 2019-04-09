@@ -21,7 +21,7 @@
             pageName.pug
         global.pug
     /pages
-        page.pug //берем страницы отсуда и ложим в dist/
+        page.pug // берем страницы отсуда и ложим в dist/
     layout.pug // шаблон страницы
     script.js // основной файл скриптов ложим в dist/js
     style.scss // основной файл стилей ложим в dist/css
