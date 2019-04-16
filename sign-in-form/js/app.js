@@ -1,6 +1,6 @@
 $(function() {
-    
-    let $tabs = $(".tabs"),
+
+    let $tabs = $('.tabs'),
         $tabs__nav = $($tabs).children('.tabs__nav'),
         $tabs__item = $($tabs__nav).children('.tabs__item'),
         $tabs__devider = $($tabs__nav).children('.tabs__devider'),
