@@ -19,6 +19,9 @@ function Print(_message) {
 document.getElementById("js-button").addEventListener("click", Esche);
 
 document.getElementById("js-clear").addEventListener("click", () => {
+
+    console.log(this);
+
     localStorage.clear();
 
     Print("");
