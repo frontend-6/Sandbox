@@ -8,7 +8,14 @@ $(document).ready(function () {
         adaptiveHeight: true
     }
 
-    let slider = $('.slick').slick(options);
+    let breakpoints = {
+        
+    }
+
+    let slider1 = $('.slick1').slick(options);
+
+    options.adaptiveHeight = false;
+    let slider2 = $('.slick2').slick(options);
 
     console.log(options);
 
