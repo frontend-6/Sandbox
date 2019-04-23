@@ -1,0 +1,13 @@
+/* styles goes here */
+.swiper-container {
+    /* width: 600px; */
+    /* height: 300px; */
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.customclass {
+    color: red;
+}
