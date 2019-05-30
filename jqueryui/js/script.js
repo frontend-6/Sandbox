@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    $( "#datepicker" ).datepicker({
+        dateFormat: "yymmdd"
+      });
+
     let fromBank = [];
     
     $.ajax({
@@ -37,8 +41,12 @@ $(document).ready(function () {
     $('#count').change(Calc);
 
     function Calc() {
-        // add your code here
+        var count = $('#count').val();
+        for (let i = 0; i < fromBank.length; i++) {
+            if ($( "#currency" ).val() == fromBank[i].txt) {
+                $('#result').text(fromBank[i].rate * count);   
+            }
+        }
     }
-
 
 })
