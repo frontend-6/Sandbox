@@ -2,13 +2,18 @@ $(document).ready(function () {
 
     $( "#datepicker" ).datepicker({
         dateFormat: "yymmdd"
-      });
+    });
+
+    let url = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json';
 
     let fromBank = [];
     
     $.ajax({
-        url: 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json',
+        url: url,
         type: 'GET'
+    })
+    .fail(function() {
+        alert( "error" );
     })
     .done(function (response) {
         console.log(response)
@@ -36,17 +41,34 @@ $(document).ready(function () {
                 Calc();
             }
         });
-    })
+    });
 
     $('#count').change(Calc);
+    $('#datepicker').change(Calc);
 
     function Calc() {
+        let newUrl  = url + "&date=" + $('#datepicker').val();
+
         var count = $('#count').val();
-        for (let i = 0; i < fromBank.length; i++) {
-            if ($( "#currency" ).val() == fromBank[i].txt) {
-                $('#result').text(fromBank[i].rate * count);   
+
+        $.ajax({
+            url: newUrl,
+            type: 'GET'
+        })
+        .fail(function() {
+            alert( "error" );
+        })
+        .done(function (response) {
+            console.log(response)
+            fromBank = response;
+        })
+        .then(function () {
+            for (let i = 0; i < fromBank.length; i++) {
+                if ($( "#currency" ).val() == fromBank[i].txt) {
+                    $('#result').text(fromBank[i].rate * count);   
+                }
             }
-        }
+        })
     }
 
 })
