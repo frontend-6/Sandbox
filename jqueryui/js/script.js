@@ -1,10 +1,21 @@
 $(document).ready(function () {
+<<<<<<< HEAD
     $( "#datepicker" ).datepicker();
+=======
+
+    $( "#datepicker" ).datepicker({
+        dateFormat: "yymmdd"
+      });
+>>>>>>> e8e4b0d610c68ed839f10f811a028050d3aa0cd6
 
     let fromBank = [];
     
     $.ajax({
+<<<<<<< HEAD
         url: 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?date=20190530 ',
+=======
+        url: 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json',
+>>>>>>> e8e4b0d610c68ed839f10f811a028050d3aa0cd6
         type: 'GET'
     })
     .done(function (response) {
@@ -38,9 +49,20 @@ $(document).ready(function () {
     $('#count').change(Calc);
 
     function Calc() {
+<<<<<<< HEAD
         // add your code here
         
     }
 
 
+=======
+        var count = $('#count').val();
+        for (let i = 0; i < fromBank.length; i++) {
+            if ($( "#currency" ).val() == fromBank[i].txt) {
+                $('#result').text(fromBank[i].rate * count);   
+            }
+        }
+    }
+
+>>>>>>> e8e4b0d610c68ed839f10f811a028050d3aa0cd6
 })
