@@ -1,11 +1,11 @@
 $(document).ready(function () {
-
+    
     $( "#datepicker" ).datepicker({
         dateFormat: "yymmdd"
     });
 
     let url = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json';
-
+    
     let fromBank = [];
     
     $.ajax({
@@ -47,8 +47,9 @@ $(document).ready(function () {
     $('#datepicker').change(Calc);
 
     function Calc() {
+        
         let newUrl  = url + "&date=" + $('#datepicker').val();
-
+        
         var count = $('#count').val();
 
         $.ajax({
@@ -70,5 +71,4 @@ $(document).ready(function () {
             }
         })
     }
-
 })
