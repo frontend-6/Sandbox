@@ -1,0 +1,23 @@
+img {
+    display: block;
+    float: left;
+}
+.fe7slider__track {
+    transition: ease .3s;
+}
+.fe7slider, .fe7slider__dots:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+.fe7slider__dot {
+    float: left;
+    display: block;
+    border-radius: 50%;
+    background-color: grey;
+    width: 40px;
+    height: 40px;
+}
+.fe7slider__dot--active {
+    background-color: black;
+}
